@@ -1,6 +1,8 @@
 import { TextInput } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { UserCard } from "@/components/user-card";
+import { TotalVisits } from "@/components/total-visits";
+import { ProjectCard } from "@/components/project-card";
 
 
 export const Hero = () => {
@@ -22,14 +24,14 @@ export const Hero = () => {
             <div className="w-full flex items-center justify-center bg-[radial-gradient(circle_at_50%_50%,#4B2Dbb,transparent_55%)]">
                 <div className="relative">
                     <UserCard />
-                    <div className="absolute -bottom-[7%] -right-[45%]">
-                        {/* <TotalVisits /> */}
+                    <div className="absolute bottom-[2%] -right-[45%]">
+                        <TotalVisits />
                     </div>
-                    <div className="absolute to-20% -left-[45%] -z-10">
-                        {/* <ProjectCard /> */}
+                    <div className="absolute top-[20%] -left-[45%] -z-10 blur-[3px]">
+                        <ProjectCard />
                     </div>
-                    <div className="absolute to-5% -left-[55%] -z-10">
-                        {/* <ProjectCard /> */}
+                    <div className="absolute -top-[5%] -left-[55%] -z-10 blur-[2px]">
+                        <ProjectCard />
                     </div>
                 </div>
             </div>
